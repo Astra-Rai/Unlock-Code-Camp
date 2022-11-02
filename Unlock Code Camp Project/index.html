@@ -6,29 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body  { /* test: added universal selector to body element*/
+            margin: 0;
+        }
+        /*
+        #greetingDiv{/*test to view div*
+            background: yellow;
+        */
+        
         #greetingTag{
             color:red;
-        }
-        
-        #redHorizontalRule{
+        }      
+
+        #redHorizontalRule {
             width: 55px;
-            align:left;
+            align-content:left;/* to research: should align be align-content*/
+            /* test: add thickness to <hr>border: 15px solid red; */
+            margin: 0px;
+            border-color:red;
         }
+
+        #theTechCoachHeading{
+            font-size: 30px;
+        }
+        /*
+        #headshotDiv{
+            background-color: blueviolet;
+        */
+        
+        #headshotImage{
+                width: 40%;/*note: adjust the aspect ratio as one only change width, not width and height*/
+        }         
     </style>
+
 </head>
+<!--start: body element, id="my body" -->
 <body id="myBody">
-    <p id="greetingTag">
-        Hi. I'm 
-    </p>
-    <h1 id="unlockYourDreamsHeading">
-    Astra
-    <br />.Rai
-    </h1>
-<!-- <hr id="redHorizontalRule" /> 
-Note: Edit hr later
--->
-<p>
-    The Creative Technologist
-</p>
+
+    <!--start: greeting content-->   
+    <!--start: div id="greeting"-->
+
+    <div id="greetingDiv">  
+        <p id="greetingTag">
+            Hi. I'm
+         </p>
+        <h1 id="unlockYourDreamsHeading">
+        Astra
+             <br />.Rai
+    
+        </h1>
+    
+        <hr id="redHorizontalRule" /> 
+    
+        <h4 id="theTechCoachHeading">
+            The Creative Technologist
+        </h4>    
+    
+    </div> 
+    <!--end: div id="greeting"  --> 
+    <!--end: greeting content -->
+
+
+    <!--start: Test Div #1 -->
+    <div style="border: 1px solid black; width:100px;">
+        <h1>This is a test</h1>
+    </div>
+    <!--end: Test Div #1 -->
+
+    <!-- start:  Test Div #2 -->
+
+    <div style="border:5px dotted red; width:500px">
+        This is a test
+        <img id="headshotImage" src= "/images/astra-rai-headshot.jpg"/>
+    </div>
+
+    <!-- end: Test Div #2 -->
+
 </body>
+<!--end: body id = "my body" -->
 </html>
