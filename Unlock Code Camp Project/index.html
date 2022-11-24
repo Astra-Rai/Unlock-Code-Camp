@@ -4,143 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Quicksand&family=Rajdhani&family=Roboto+Condensed:wght@300&family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <title>Unlock | Code Camp Project</title>
-    <style>
-        body{ /* test: added universal selector to body element, margin:0;*/
-           background: #334352; 
-        }
-        #mainWrapper{
-            display:flex;
-            flex-direction: column;
-            width: 50%;
-            border: 3px solid yellow;
-        }
-
-    
-        #greetingTag{
-            color: #c4302b ;
-        }      
-
-        #redHorizontalRule { /* Lesson 2.1 Homework Tasks: Add red Horizontal Rule */
-            width: 55px;
-            align-content:left;/* to research: should align be align-content*/
-            /* test: add thickness to <hr>border: 15px solid red; */
-            margin: 0px;
-            border-color: #c4302b; 
-        }
-
-        #theTechCoachHeading{
-            font-size: 12px;
-        }
-        #headshotImage{
-            width: 200px;
-            /*margin-left: 20%; */
-        }
-
-        #greetingWrapper{/* greeting div contains the greeting and headshot divs*/
-            display:flex; /* lets CSS know flexbox will be used*/
-            flex-direction: row; /* flex-direction is set to "row" by default */
-            background-color: #ffffff; /*note the white background color spreads width of screen*/
-            width: 100%; /* 50% of screen width, lesson 3.1 21:00 min mark, change to 100% after making mainWrapper, watch again */
-            /*padding-left: 15px; */
-        }
-        
-        #viewAssetsWrapper{
-            display:flex;
-            flex-direction:row;   
-        }
-        #viewResumeButton{
-            display: flex; 
-            flex-direction:column; /* a column within the viewAssestsWrapper row?*/
-            background-color:#e71d36; /* background color of reusme button*/
-            color: #ffffff; /* color of  of text*/
-            text-align: center;
-            line-height:30px; /* verticle height of text */
-            padding: 10px;/* spacing arond text in reference to margin */
-            width: 50%;
-            
-        }
-
-        #viewPortfolioButton{
-
-            display: flex; 
-            flex-direction:column; /* a column within the viewAssestsWrapper row?*/
-            background-color:#011526; /* background color of reusme button*/
-            color: #ffffff; /* color of  of text*/
-            text-align: center;
-            line-height:30px; /* verticle height of text */
-            padding: 10px;/* spacing arond text in reference to margin */
-            width:50%;
-        }
-   
-    </style>
-
 </head>
-<!--start: body element, id="my body" -->
-<body id="myBody">
-
-
-    <!--start: mainWrapper-->
-    <div id="mainWrapper">
-    <!--start: greeting content-->   
-    <!--start: div id="greeting"-->
-    <!--Start of Greeting Wrapper-->
-    <div id="greetingWrapper"><!--wraps around divs with id "greetingDiv" and "headshotDiv"-->
-    <div id="greetingDiv"> <!--Lesson 2.1 Homework Tasks: put greeting content in a div with id="greetingDiv"--> 
-        <p id="greetingTag">
-            Hi. I'm
-        </p>
+<body id="myBody"> <!--start: id="my body" -->
+     
+    <div id="mainWrapper"> <!--start: id="mainWrapper"-->
+        <div id="greetingWrapper"><!--start: greetingWrapper wraps around divs with id "greetingDiv" and "headshotDiv"-->
+         
+            <div id="greetingDiv"> <!--Lesson 2.1 Homework Tasks: put greeting content in a div with id="greetingDiv"--> 
+              <p id="greetingTag">
+                    Hi. I'm
+                </p>
         
-         <h1 id="unlockYourDreamsHeading">
-        Astra
-             <br />.Rai
-        </h1>
+                <h1 id="unlockYourDreamsHeading">
+                    Astra
+                <br /> Rai
+              </h1>
     
-        <hr id="redHorizontalRule" /> <!--Lesson 2.1 Homework Tasks: Add red Horizontal Rule-->
-        <h4 id="theTechCoachHeading">
-            The Creative Technologist
-        </h4>    
-    </div> 
-    <!--end: div id="greeting"  --> 
-    <!--end: greeting content -->
-    <!--start: of headshotDiv-->
-    <div id="headshotDiv" style="border: 20px dotted pink; width:800px;"><!--Lesson 2.1 Homework Tasks: put image in a div contentwith id="greetingDiv"--> 
-        <img id="headshotImage"  src= "/images/astra-rai-headshot.jpg" alt=""><!--image is huge-->
-    </div> 
-    <!--end: of headshot Div -->
-    </div>
-    <!--End of Greeting Wrapper-->
+              <hr id="redHorizontalRule" /> <!--Lesson 2.1 Homework Tasks: Add red Horizontal Rule-->
+              <h4 id="theTechCoachHeading">
+                    The Creative Technologist
+              </h4>    
+           </div> <!--End: id="greetingDiv" / End of greeting content --> 
+            
+           <div id="headShotDiv">   
+                <img id="headShotImage"  src= "/images/astra-rai-headshot.jpg" alt="">
+            </div> <!--End: id="headShotDiv" -->
+
+        </div> <!--End: id="greetingWrapper"-->
     
-    <!--Start: Start of viewAssetsWrapper, contains porfolio buttons-->
-    <div id="viewAssetsWrapper">
-        
-        <div id="viewResumeButton">
-            View Resume
-        </div>
+         <div id="viewAssetsWrapper"> <!--Start: id="viewAssetsWrapper", contains porfolio buttons-->
+            <div id="viewResumeButton">
+                View Resume
+            </div>
+            <div id="viewPortfolioButton">
+                View Portfolio
+            </div>
+        </div> <!--End: id="viewAssetsWrapper"-->
 
-        <div id="viewPortfolioButton">
-            View Portfolio
-        </div>
-    
-    </div>
-    <!--End: End of Assets Wrapper-->
-    </div>
-<!--end: end of mainWrapper-->
-</body>
+    </div> <!--End: id="mainWrapper"-->
 
-    <!--end: body id = "my body" -->
-    <!-- start: of Test Div #1 from Lesson 2.1
-    <div style="border: 1px solid black; width:100px;">
-        <h1>This is a test</h1>
-    </div>
-
-    end: of Test Div #1 from Lesson 2.1 -->
-
-    <!-- strart of Test Div from Lesson 2.1
-    <div style="border:5px dotted red; width:500px">
-        This is a test
-        <img id="headshotImage" src= "/images/astra-rai-headshot.jpg"/>
-    </div> -->
-
-    <!-- end: Test Div #2 -->
+</body> <!--end: id="my body"-->
 </html>

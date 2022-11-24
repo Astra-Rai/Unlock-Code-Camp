@@ -1,0 +1,76 @@
+body{ /* test: added universal selector to body element, margin:0;*/
+    background: #334352; 
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 1.5px;
+ }
+ #mainWrapper{
+     display:flex;
+     flex-direction: column;
+     width: 50%;
+ }
+ #greetingTag{
+     color: #c4302b;
+ }      
+
+ #redHorizontalRule { /* Lesson 2.1 Homework Tasks: Add red Horizontal Rule */
+     width: 35px;
+     margin: 0px;
+     border-color: #c4302b; 
+ }
+
+ #theTechCoachHeading{
+     font-size: 18px;
+ }
+
+ #unlockYourDreamsHeading{
+    letter-spacing: 2.5px;
+ }
+
+ #headShotImage{
+     /*use flex to make this more even, picture floating outside of main wrapper div*/
+     width: 200px;
+     padding-top:1%;
+     margin-left: 76%; 
+ }
+
+ #greetingWrapper{/* greeting div contains the greeting and headshot divs*/
+     display:flex; /* lets CSS know flexbox will be used*/
+     flex-direction: row; /* flex-direction is set to "row" by default */
+     justify-content: stretch;
+     background-color: #ffffff; /*note the white background color spreads width of screen*/
+     width: 100%; /* 50% of screen width, lesson 3.1 21:00 min mark, change to 100% after making mainWrapper, watch again */
+     /*padding-left: 15px; padding moved to greetingDiv*/
+ }
+
+ #greetingDiv{
+     padding-left: 15px; 
+ }
+
+ #viewAssetsWrapper{ /* # hashtag, "find element  with id="viewAssetsWrapper""*/
+     display:flex;
+     flex-direction:row; 
+ 
+ }
+ #viewResumeButton{
+     display: flex; 
+     flex-direction:column; /* a column within the viewAssestsWrapper row?*/
+     background-color:#e71d36; /* background color of reusme button*/
+     color: #ffffff; /* color of  of text*/
+     text-align: center;
+     line-height:30px; /* verticle height of text */
+     padding: 10px;/* spacing arond text in reference to margin */
+     letter-spacing: 2.5px;
+     flex-basis: 50%;     
+ }
+
+ #viewPortfolioButton{
+     display: flex; 
+     flex-direction:column; /* a column within the viewAssestsWrapper row?*/
+     background-color:#011526; /* background color of reusme button*/
+     color: #ffffff; /* color of  of text*/
+     text-align: center;
+     line-height:30px; /* verticle height of text */
+     padding: 10px;/* spacing arond text in reference to margin */
+    letter-spacing: 2.5px;
+    flex-basis: 50%;
+ }
