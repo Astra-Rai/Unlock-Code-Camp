@@ -1,13 +1,51 @@
 body{ /* test: added universal selector to body element, margin:0;*/
-    background: #334352; 
+    background-color: #334352; 
     font-family: 'Quicksand', sans-serif;
+    margin: 0px;
     letter-spacing: 1.5px;
  }
+ #container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 0px;
+ }
+
+ #navWrapper{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20%;
+    background-color: #011526;
+    color: #ffffff;
+}
+
+#innerContainer{
+    display: flex;
+    flex-direction:row;  
+    height: 99999%;
+}
+
+#divider{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 15%;
+    border-right: 1px solid #808080;
+}
+
+#navContent{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
  #mainWrapper{
      display:flex;
      flex-direction: column;
      width: 50%;
+
  }
+
  #greetingTag{
      color: #c4302b;
  }      
@@ -30,7 +68,7 @@ body{ /* test: added universal selector to body element, margin:0;*/
      /*use flex to make this more even, picture floating outside of main wrapper div*/
      width: 200px;
      padding-top:1%;
-     margin-left: 76%; 
+     margin-left: 40%; 
  }
 
  #greetingWrapper{/* greeting div contains the greeting and headshot divs*/

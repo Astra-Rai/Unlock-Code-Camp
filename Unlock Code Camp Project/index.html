@@ -10,26 +10,42 @@
     <link rel="stylesheet" href="styles.css">
     <title>Unlock | Code Camp Project</title>
 </head>
-<body id="myBody"> <!--start: id="my body" -->
-     
-    <div id="mainWrapper"> <!--start: id="mainWrapper"-->
-        <div id="greetingWrapper"><!--start: greetingWrapper wraps around divs with id "greetingDiv" and "headshotDiv"-->
-         
-            <div id="greetingDiv"> <!--Lesson 2.1 Homework Tasks: put greeting content in a div with id="greetingDiv"--> 
-              <p id="greetingTag">
+<body id="myBody"> <!--Start: id="my body" -->
+
+    <div id="container"><!--Start: id="container", contain is the new row-->
+        <div id="navWrapper"><!--Start: id="navWrapper"-->
+            <div id="innerContainer">              
+                <div id="divider"></div><!--Start and End" id="divider, divider is an empty container-->    
+                
+                <div id="navContent"><!--Start: id="navContent"-->
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Resume</li>
+                        <li>Portfolio</li>
+                    </ul>
+                </div><!--End: id="navContent"-->    
+                </div>
+            </div><!--End: id="innerContainer"-->
+        <div id="mainWrapper"> <!--Start: id="mainWrapper"-->
+            <div id="greetingWrapper"><!--Start: greetingWrapper wraps around divs with id "greetingDiv" and "headshotDiv"-->
+             <div id="greetingDiv"> <!--Lesson 2.1 Homework Tasks: put greeting content in a div with id="greetingDiv"--> 
+                <p id="greetingTag">
                     Hi. I'm
                 </p>
         
                 <h1 id="unlockYourDreamsHeading">
                     Astra
                 <br /> Rai
-              </h1>
+                </h1>
     
               <hr id="redHorizontalRule" /> <!--Lesson 2.1 Homework Tasks: Add red Horizontal Rule-->
+              
               <h4 id="theTechCoachHeading">
                     The Creative Technologist
-              </h4>    
-           </div> <!--End: id="greetingDiv" / End of greeting content --> 
+                </h4>    
+           
+            </div> <!--End: id="greetingDiv" / End of greeting content --> 
             
            <div id="headShotDiv">   
                 <img id="headShotImage"  src= "/images/astra-rai-headshot.jpg" alt="">
@@ -45,8 +61,8 @@
                 View Portfolio
             </div>
         </div> <!--End: id="viewAssetsWrapper"-->
-
     </div> <!--End: id="mainWrapper"-->
-
+</div><!--End: id="container"-->
+<!--<div id="yellow">daskhfashdfjkdsfh</div>-about section test->
 </body> <!--end: id="my body"-->
 </html>
